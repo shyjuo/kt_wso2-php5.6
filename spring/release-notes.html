@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>WSF/Spring Release Notes</TITLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P>27th August 2008</P>
+<H2><B>WSO2 WSF/Spring 1.5</B></H2>
+<P>Welcome to the WSO2 Web Services Framework for Spring release 1.5.</P>
+<P>WSO2 WSF/Spring provides an amazingly simple Code First approach to create Web Services for the Spring user. 
+This framework integrates the Apache Axis2 web services engine into Spring. Thus, providing all the power and 
+versatility of the Axis2 engine to the Spring user.</p>
+<p>Now, with just a few entries in the application context, Spring users can enjoy the benefits of Service 
+Oriented Architecture using Web Services in their applications.</P>
+<H2><B>Features</B></H2>
+<UL>
+	<LI><P>Support for exposing Spring services through the IOC container</P>
+	<LI><P>Support for editing Axis 2 booting configuration through the IOC container</P>
+	<LI><P>Automated WSDL generation of Spring services</P>
+	<LI><P>Support for querying service's WSDL (with ?wsdl), schema (with ?xsd) and	policies (with ?policy)</P>
+	<LI><P>Deployment of Axis2 Modules (WS-Addressing, WS-Security, etc.) through the classpath</P>
+	<LI><P>Support for WS Policy expressions as a configuration mechanism for services</P>
+	<LI><P>Method exclusion in Spring beans supported</P>
+</UL>
+<H2><B>Known Issues</B></H2>
+<OL>
+	<LI><p>Due to limitations in Axis2, method overloading is not supported, and hence the WSDL for services 
+	where methods are overloaded cannot be generated. Hence, all WSDL based functionality related to services
+	will not work for such services.</P>
+	<LI><p>You cannot have two different versions of the Apache Sandesha2 module in the system.</P>
+</OL>
+<H2><B>Reporting Problems</B></H2>
+<P>Issues can be reported using the public JIRA available at 
+<A HREF="http://wso2.org/jira/browse/WSFSpring">http://wso2.org/jira/browse/WSFSpring</A></P>
+
+<BR>
+<H2>Contact us</H2>
+<P>
+WSO2 WSF/Spring developers can be contacted via mailing lists:
+<BR>
+<STRONG>For Users: </STRONG><STRONG><A HREF="mailto:wsas-java-user@wso2.org">wsf-spring-dev@wso2.org</A></STRONG>
+<BR>
+<STRONG>For Developers:</STRONG><STRONG><A HREF="mailto:wsas-java-dev@wso2.org">wsf-spring-user@wso2.org</A></STRONG>
+<BR>
+For details on subscriptions see
+<A HREF="http://www.wso2.org/projects/wsas/java#mail">wsf-spring-dev-request@wso2.org</A>
+<BR>
+Alternatively, questions can also be raised in the forums:
+<A HREF="http://wso2.org/forum/194s">http://wso2.org/forum/194</A>
+<BR>
+</P>
+<P>Thank you for your interest in WSO2 WSF/Spring</P>
+<P><STRONG>The WSO2 WSF/Spring Development Team</STRONG></P>
+<BR>-----------------------------------------------------------
+<BR>2008 WSO2 Inc.
+</BODY>
+</HTML>

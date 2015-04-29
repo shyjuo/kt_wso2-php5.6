@@ -1,0 +1,182 @@
+#!/usr/bin/env bash
+
+function sync_content
+{
+	rsync ../../build.bat .
+	echo "synchronizing build.bat ... done"
+
+	rsync ../../build.sh .
+	echo "synchronizing build.sh ... done"
+
+	rsync ../../find_rbconfig.rb .
+	echo "synchronizing find_rbconfig.rb ... done"
+
+	rsync ../../find_config_h.rb .
+	echo "synchronizing find_config_h.rb ... done"
+
+	rsync ../../get_wsfc_home.rb .
+	echo "synchronizing get_wsfc_home.rb ... done"
+
+	rsync ../../extconf.rb .
+	echo "synchronizing extconf.rb ... done"
+
+	rsync ../../install.rb .
+	echo "synchronizing install.rb ... done"
+
+	# Generate WSFC Wrapper
+	swig -ruby -I../../swig/ -o WSFC_wrapper.c -outdir ./ -Wall WSFC.i
+	echo "synchronizing WSFC_wrapper.c ... done"
+
+	# Create "lib" Directory
+	if [ ! -e "lib" ]
+	then
+		mkdir lib
+	fi
+
+	rsync -r --exclude=.svn ../../lib/config lib
+	echo "synchronizing config ... done"
+
+	rsync -r --exclude=.svn ../../lib/logger lib
+	echo "synchronizing logger ... done"
+	
+	rsync -r --exclude=.svn ../../lib/util lib
+	echo "synchronizing util ... done"
+	
+	rsync -r --exclude=.svn ../../lib/wsf lib
+	
+	rsync -r --exclude=.svn ../../lib/wsdl lib
+	
+        rsync ../../lib/wsf.rb lib
+	echo "synchronizing wsf ... done"
+	
+	rsync -r --exclude=.svn --exclude=*.o --exclude=Makefile --exclude=*.log --exclude=*.so ../../wsservice .
+	echo "synchronizing wsservice ... done"
+	
+	rsync -r --exclude=.svn --exclude=*.o --exclude=Makefile --exclude=*.log --exclude=xslt --exclude=*.so ../../wsdlc .
+	echo "synchronizing wsdlc  ... done"
+
+	cd wsdlc
+	# Create "xslt" Directory
+	if [ ! -e "xslt" ]
+	then
+		mkdir xslt
+	fi
+	cd ..
+
+	rsync ../../wsdlc/xslt/wsdl2sig.xslt ./wsdlc/xslt/wsdl2sig.xslt
+	echo "synchronizing xslt 1 ... done"	
+	
+	rsync ../../wsdlc/xslt/wsdl11to20.xsl10.xsl ./wsdlc/xslt/wsdl11to20.xsl10.xsl
+	echo "synchronizing xslt 2 ... done"	
+
+	rsync ../../wsdlc/build/win32/Makefile ./wsdlc/build/win32/Makefile
+	echo "synchronizing wsdlc/win32/Makefile ... done"	
+
+	rsync ../../configure.in.src ./configure.in
+	echo "synchronizing configure.in ... done"
+
+	rsync ../../conf/wsdlc_type_map.xml ./wsdlc/conf/type_map.xml
+	echo "synchronizing type map ... done"
+	
+	rsync -r --exclude=.svn ../../docs .
+	echo "synchronizing docs ... done"
+	
+	rsync -r --exclude=.svn ../../samples .
+	echo "synchronizing samples ... done"
+	
+	rsync ../../AUTHORS .
+	echo "synchronizing AUTHORS ... done"
+
+	rsync ../../COPYING .
+	echo "synchronizing COPYING ... done"
+
+	rsync ../../LICENSE .
+	echo "synchronizing LICENSE ... done"
+
+	rsync ../../NEWS .
+	echo "synchronizing NEWS ... done"
+
+	rsync ../../NOTICE .
+	echo "synchronizing NOTICE ... done"
+
+	rsync ../../README .
+	echo "synchronizing README ... done"
+
+	rsync ../../INSTALL .
+	echo "synchronizing INSTALL ... done"
+
+	rsync ../../README.INSTALL_WIN32 .
+	echo "synchronizing README.INSTALL_WIN32 ... done"
+
+	rsync ../../README.INSTALL .
+	echo "synchronizing README.INSTALL ... done"
+
+	rsync ../../README.SAMPLES .
+	echo "synchronizing README.SAMPLES ... done"
+
+	rsync ../../ChangeLog .
+	echo "synchronizing ChangeLog ... done"
+
+	echo
+	echo "synchronizing content ... OK"
+	echo
+}
+
+function create_package
+{
+	# Find revision number
+	cd ..
+	revision_number=`svn info | grep Revision`
+	cd dist
+
+	# Create directory
+	rm -rf $1
+	mkdir $1
+
+	# Sync content
+	cd $1
+	sync_content
+	echo $revision_number > .revision
+	cd ..
+	
+	# Create Linux package
+	tar -cvzf $1.tar.gz $1
+	
+	echo
+	echo "Linux distribution package - $1.tar.gz... OK"
+	echo
+
+	# Create Win32 package
+	zip -r $1.zip $1
+	
+	echo
+	echo "Win32 distribution package - $1.zip ... OK"
+	echo
+}
+
+function show_usage
+{
+	echo "Usage :"
+	echo "--create [package-name]     create Linux and Win32 distribution packages."
+	echo "--help                      show this usage message."
+}
+
+if [ $# -eq 0 ]
+then
+	show_usage
+	exit -1
+fi
+
+if [ $1 == "--create" ]
+then
+	if [ ! -z $2 ]
+	then
+		create_package $2
+	else
+		show_usage
+	fi
+else
+	show_usage
+fi
+
+exit 0

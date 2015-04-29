@@ -1,0 +1,193 @@
+	      ---------------------------------------------------
+	      WSO2 Web Services Framework (WSF) Admin Console for 
+	          Apache Axis2/C, WSO2 WSF/C and WSO2 WSF/C++ 
+	      ===================================================
+
+-----------------
+Table of Contents
+=================
+
+1. Introduction
+2. Prerequisites
+3. Installing the WSO2 Carbon Console (FE)
+   3.1 Customizing WSO2 Carbon Console for WSF Admin
+4. Getting the Admin Backend Working on Linux
+   4.1 Using Source Release
+5. Getting the Admin Backend Working on Windows (Win32)
+   5.1 Using Binary Release
+   5.2 Using Source Release
+
+---------------
+1. Introduction
+===============
+
+The WSO2 WSF Admin consists of a front-end component and a backend component.
+The front-end is powered by a customized WSO2 Carbon Console instance while 
+the backend is powered by a set of Apache Axis2/C services and modules. This 
+document explains how you would install a customized version of WSO2 Carbon
+console for administering Apache Axis2/C or WSO2 WSF/C or WSO2 WSF/C++ 
+backend instance. It also explains how you would install the admin backend on
+Apache Axis2/C or WSO2 WSF/C or WSO2 WSF/C++.
+
+----------------
+2. Prerequisites
+================
+
+The sole purpose of this application is to administer Apache Axis2/C or 
+WSO2 WSF/C or WSO2 WSF/C++ backend. Therefore you need to have one of them 
+running on your machine. Also you need to have WSO2 WSF/C installed on 
+your machine if you need to build the Admin backend from source.
+    
+NOTE : You can download these frameworks from the locations mentioned hereunder.
+     
+      - WSO2 WSF/C     - http://wso2.org/downloads/wsf/cpp
+      - WSO2 WSF/C++   - http://wso2.org/downloads/wsf/c
+      - Apache Axis2/C - http://ws.apache.org/axis2/c/download.cgi
+
+------------------------------------------
+3. Installing the WSO2 Carbon Console (FE)
+==========================================
+
+The WSO2 WSF Admin distribution comes with a WSO2 Carbon Console instance 
+customized for the backend functionalities. Therefore once you have installed
+the WSO2 WSF Admin on your machine, you will also have a WSO2 Carbon Console 
+instance that can be used right away. But may also setup a WSO2 Carbon Console 
+instance from the scratch as explained below.
+
+3.1 Customizing WSO2 Carbon Console for WSF Admin
+-------------------------------------------------
+
+  1. Download an empty Carbon instance from [1]
+
+  2. Install the following set of features on your Carbon instance as explained 
+     in [2]
+  
+     - org.wso2.carbon.module.mgt.ui.feature.group 2.0.2
+     - org.wso2.carbon.security.mgt.ui.feature.group 2.0.2
+     - org.wso2.carbon.service.mgt.ui.feature.group 2.0.2
+     - org.wso2.carbon.system.statistics.ui.feature.group 2.0.2
+     - org.wso2.carbon.transport.mgt.ui.feature.group 2.0.2
+     - org.wso2.wsas.styles.feature.group 3.1.2
+ 
+  3. Replace the carbon.xml in your %CARBON_HOME%\conf with relevant file
+     included in this distribution depending on the product you need to 
+     administer
+
+     - For WSO2 WSF/C   - carbon/conf/carbon.c.xml
+     - For WSO2 WSF/C++ - carbon/conf/carbon.cpp.xml
+
+  4. Replace org.wso2.wsas.styles-3.1.2 in %CARBON_HOME%\repository\components\
+     plugins with relevant jar file included in this distribution depending on 
+     the product you need to administer.
+
+     - For WSO2 WSF/C   - carbon/styles/org.wso2.wsas.styles-3.1.2.c.jar
+     - For WSO2 WSF/C++ - carbon/styles/org.wso2.wsas.styles-3.1.2.cpp.jar
+
+  5. You now have a WSO2 Carbon Console instance customized for your preferred 
+     product
+
+  [1] - http://wso2.org/projects/carbon
+  [2] - https://www.wso2.org/wiki/display/carbon/p2-based-provisioning-support
+
+---------------------------------------------
+4. Getting the Admin Backend Working on Linux 
+=============================================
+
+4.1 Using Source Release
+-------------------------
+  1. Linux source distribution come as a .zip file named as 
+     wso2-wsf-admin-x.y.z.zip
+  
+  2. unzip the source dist using unzip wso2-wsf-admin-x.y.z.zip
+  
+  3. Execute the following commands.
+     $./configure --with-wsfc=<WSFC INSTALLATION DIR>/include/wsf-2.0.0
+     $./make
+     $./make install
+
+  4. Launch the interactive installer by running the shell script named 
+     setup.sh. You can now select the preferred product, product home directory
+     and the preferred installation directory for the WSO2 Carbon Console
+
+  5. You have successfully installed the Admin
+ 
+  6. Now move to the location where you wanted the installer to deploy WSO2
+     Carbon Console and start the FE server
+
+	cd <Admin Console installation directory>/bin
+	sh wso2server.sh 
+  
+  7. Go to http://localhost:9763/ using your preferred Web browser to get the 
+     WSO2 Carbon Console
+
+  8. Enter in the URI of your already running axis2_http_server in "Server URL" 
+     edit box
+
+  10. Now you are ready to try out the Admin. Use username "admin" and password
+      "admin" to log in to the WSO2 Carbon Console
+
+-------------------------------------------------------
+5. Getting the Admin Backend Working on Windows (Win32)
+=======================================================
+	
+5.1 Using Binary Release
+------------------------
+  
+  1. Unzip the binary distribution into a prefered location
+  
+  2. Launch the interactive installer by running the setup.bat file. You can 
+     now select the preferred product, product home directory
+     and the preferred installation directory for the WSO2 Carbon Console
+
+  3. You have successfully installed the Admin
+ 
+  4. Now move to the location where you wanted the installer to deploy WSO2
+     Carbon Console and start the FE server
+
+	cd <Admin Console installation directory>/bin
+	sh wso2server.sh 
+  
+  5. Go to http://localhost:9763/ using your preferred Web browser to get the 
+     WSO2 Carbon Console
+
+  6. Enter in the URI of your already running axis2_http_server in "Server URL" 
+     edit box
+
+  7. Now you are ready to try out the Admin. Use username "admin" and password
+     "admin" to log in to the WSO2 Carbon Console 
+	
+5.2 Using Source Release
+------------------------
+  
+  1. Unzip the source distribution. 
+ 
+  2. Open the configure.in_win32 file using a text editor and specify your 
+     configuaration settings.
+ 
+  3. Now run the build.bat file in the same directory as follows
+	
+     build.bat mkdist
+ 
+  4. This would build WSO2 WSF Admin and copy the binary files in to a 
+     directory named wso2-wsf-admin-bin-m1-win32 inside the build directory.
+ 
+  5. Launch the interactive installer by running the setup.bat file. You can 
+     now select the preferred product, product home directory
+     and the preferred installation directory for the WSO2 Carbon Console
+
+  6. You have successfully installed the Admin
+ 
+  7. Now move to the location where you wanted the installer to deploy WSO2
+     Carbon Console and start the FE server
+
+	cd <Admin Console installation directory>/bin
+	sh wso2server.sh 
+  
+  8. Go to http://localhost:9763/ using your preferred Web browser to get the 
+     WSO2 Carbon Console
+
+  9. Enter in the URI of your already running axis2_http_server in "Server URL" 
+     edit box
+
+  10. Now you are ready to try out the Admin. Use username "admin" and password
+      "admin" to log in to the WSO2 Carbon Console 
