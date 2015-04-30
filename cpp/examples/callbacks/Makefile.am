@@ -1,1 +1,0 @@
-SUBDIRS=authentication_provider password_callback replay_detector sct_provider

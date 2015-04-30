@@ -81,7 +81,7 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 subdir = src/subs_mgrs/service
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
-	$(top_srcdir)/depcomp
+	$(top_srcdir)/../depcomp
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -112,7 +112,7 @@ am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))
 am__v_at_0 = @
 am__v_at_1 = 
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
-depcomp = $(SHELL) $(top_srcdir)/depcomp
+depcomp = $(SHELL) $(top_srcdir)/../depcomp
 am__depfiles_maybe = depfiles
 am__mv = mv -f
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
@@ -202,20 +202,20 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-AUTOCONF = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/missing autoconf
-AUTOHEADER = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/missing autoheader
-AUTOMAKE = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/missing automake-1.14
+AUTOCONF = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/missing autoconf
+AUTOHEADER = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/missing autoheader
+AUTOMAKE = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/missing automake-1.14
 AWK = gawk
-AXIOMINC = -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/axiom/include
-AXIS2INC = -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/include
-CC = gcc-4.4
+AXIOMINC = -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/axiom/include
+AXIS2INC = -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/include
+CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2 -D_LARGEFILE64_SOURCE -ansi -Wall -Wno-implicit-function-declaration 
-CPP = gcc-4.4 -E
+CPP = gcc -E
 CPPFLAGS = 
 CXX = g++
 CXXCPP = g++ -E
@@ -247,10 +247,10 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/missing makeinfo
+MAKEINFO = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
-NEETHIINC = -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/neethi/include
+NEETHIINC = -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/neethi/include
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -283,18 +283,18 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-UTILINC = -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/util/include
+UTILINC = -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/util/include
 VERSION = 1.0
 XMLSCHEMAINC = 
 XPATHINC = 
 XSLT_CFLAGS = 
 XSLT_LIBS = 
-abs_builddir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/src/subs_mgrs/service
-abs_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/src/subs_mgrs/service
-abs_top_builddir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc
-abs_top_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc
+abs_builddir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/src/subs_mgrs/service
+abs_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/src/subs_mgrs/service
+abs_top_builddir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc
+abs_top_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc
 ac_ct_AR = ar
-ac_ct_CC = gcc-4.4
+ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 am__include = include
@@ -322,7 +322,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/install-sh
+install_sh = ${SHELL} /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -331,7 +331,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local/wsf_c
+prefix = /usr/local/savanc
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -354,10 +354,10 @@ libsavan_subs_mgr_la_LIBADD = ../common/libsavan_common_subs_mgr.la
 INCLUDES = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/savan \
 			-I. \
-			-I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/include \
-		   	-I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/axiom/include \
-		   	-I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/neethi/include \
-		   	-I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/savanc/../axis2c/util/include
+			-I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/include \
+		   	-I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/axiom/include \
+		   	-I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/neethi/include \
+		   	-I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/savanc/../axis2c/util/include
 
 EXTRA_DIST = 
 all: all-recursive

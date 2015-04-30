@@ -1,7 +1,7 @@
-srcdir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src
-builddir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src
-top_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src
-top_builddir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src
+srcdir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src
+builddir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src
+top_srcdir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src
+top_builddir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src
 EGREP = /bin/grep -E
 SED = /bin/sed
 CONFIGURE_COMMAND = './configure' '--disable-option-checking' '--prefix=/usr/local/wsf_c' 'CC=gcc-4.4' '--cache-file=/dev/null' '--srcdir=.'
@@ -11,7 +11,7 @@ SHLIB_DL_SUFFIX_NAME = so
 ZEND_EXT_TYPE = zend_extension
 RE2C = exit 0;
 AWK = gawk
-WSF_SHARED_LIBADD = -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/sandesha2c/src/client/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/sandesha2c/src/client/.libs -lsandesha2_client -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/src/util/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/src/util/.libs -lneethi_util -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/src/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/src/.libs -lneethi -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/rampartc/src/core/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/rampartc/src/core/.libs -lmod_rampart -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/transport/http/receiver/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/transport/http/receiver/.libs -laxis2_http_receiver -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/transport/http/sender/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/transport/http/sender/.libs -laxis2_http_sender -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/util/src/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/util/src/.libs -laxutil -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/engine/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/src/core/engine/.libs -laxis2_engine -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/axiom/src/om/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/axiom/src/om/.libs -laxis2_axiom -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/axiom/src/parser/guththila/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/axiom/src/parser/guththila/.libs -laxis2_parser
+WSF_SHARED_LIBADD = -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/sandesha2c/src/client/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/sandesha2c/src/client/.libs -lsandesha2_client -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/src/util/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/src/util/.libs -lneethi_util -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/src/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/src/.libs -lneethi -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/rampartc/src/core/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/rampartc/src/core/.libs -lmod_rampart -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/transport/http/receiver/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/transport/http/receiver/.libs -laxis2_http_receiver -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/transport/http/sender/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/transport/http/sender/.libs -laxis2_http_sender -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/util/src/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/util/src/.libs -laxutil -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/engine/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/src/core/engine/.libs -laxis2_engine -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/axiom/src/om/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/axiom/src/om/.libs -laxis2_axiom -Wl,-rpath,/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/axiom/src/parser/guththila/.libs -L/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/axiom/src/parser/guththila/.libs -laxis2_parser
 shared_objects_wsf = wsf.lo wsf_xml_msg_recv.lo wsf_util.lo wsf_stream.lo wsf_worker.lo wsf_out_transport_info.lo wsf_client.lo wsf_policy.lo wsf_wsdl.lo
 PHP_PECL_EXTENSION = wsf
 PHP_MODULES = $(phplibdir)/wsf.la
@@ -22,7 +22,7 @@ prefix = /usr
 exec_prefix = $(prefix)
 libdir = ${exec_prefix}/lib
 prefix = /usr
-phplibdir = /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/modules
+phplibdir = /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/modules
 phpincludedir = /usr/include/php5
 CC = gcc-4.4
 CFLAGS = -g -O2
@@ -36,7 +36,7 @@ EXTENSION_DIR = /usr/lib/php5/20131226
 PHP_EXECUTABLE = /usr/bin/php
 EXTRA_LDFLAGS =
 EXTRA_LIBS =
-INCLUDES = -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/include -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/util/include -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/axiom/include -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/include -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/rampartc/include -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/axis2c/neethi/src/util -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/wsf_c/sandesha2c/include -I/usr/include/libxml2
+INCLUDES = -I/usr/include/php5 -I/usr/include/php5/main -I/usr/include/php5/TSRM -I/usr/include/php5/Zend -I/usr/include/php5/ext -I/usr/include/php5/ext/date/lib -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/include -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/util/include -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/axiom/include -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/include -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/rampartc/include -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/axis2c/neethi/src/util -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/wsf_c/sandesha2c/include -I/usr/include/libxml2
 LFLAGS =
 LDFLAGS =
 SHARED_LIBTOOL =
@@ -177,24 +177,24 @@ distclean: clean
 
 .PHONY: all clean install distclean test
 .NOEXPORT:
-wsf.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf.c -o wsf.lo 
-wsf_xml_msg_recv.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_xml_msg_recv.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_xml_msg_recv.c -o wsf_xml_msg_recv.lo 
-wsf_util.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_util.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_util.c -o wsf_util.lo 
-wsf_stream.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_stream.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_stream.c -o wsf_stream.lo 
-wsf_worker.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_worker.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_worker.c -o wsf_worker.lo 
-wsf_out_transport_info.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_out_transport_info.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_out_transport_info.c -o wsf_out_transport_info.lo 
-wsf_client.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_client.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_client.c -o wsf_client.lo 
-wsf_policy.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_policy.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_policy.c -o wsf_policy.lo 
-wsf_wsdl.lo: /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_wsdl.c
-	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src/wsf_wsdl.c -o wsf_wsdl.lo 
+wsf.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf.c -o wsf.lo 
+wsf_xml_msg_recv.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_xml_msg_recv.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_xml_msg_recv.c -o wsf_xml_msg_recv.lo 
+wsf_util.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_util.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_util.c -o wsf_util.lo 
+wsf_stream.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_stream.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_stream.c -o wsf_stream.lo 
+wsf_worker.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_worker.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_worker.c -o wsf_worker.lo 
+wsf_out_transport_info.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_out_transport_info.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_out_transport_info.c -o wsf_out_transport_info.lo 
+wsf_client.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_client.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_client.c -o wsf_client.lo 
+wsf_policy.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_policy.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_policy.c -o wsf_policy.lo 
+wsf_wsdl.lo: /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_wsdl.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src/wsf_wsdl.c -o wsf_wsdl.lo 
 $(phplibdir)/wsf.la: ./wsf.la
 	$(LIBTOOL) --mode=install cp ./wsf.la $(phplibdir)
 

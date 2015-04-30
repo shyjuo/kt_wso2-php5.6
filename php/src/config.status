@@ -431,7 +431,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/agruet/00_SOURCES/kroknet.io/git/wsf/php/src'
+ac_pwd='/home/agruet/00_SOURCES/kroknet.io/git/ws02-php5.6/php/src'
 srcdir='.'
 AWK='gawk'
 test -n "$AWK" || AWK=awk
