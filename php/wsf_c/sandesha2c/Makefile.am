@@ -21,6 +21,5 @@ scripts_DATA=config/*.bat config/*.sh
 
 install-data-hook:
 	mkdir -p $(samplesdir)
-	cp -rf samples/* $(samplesdir)
 
 
