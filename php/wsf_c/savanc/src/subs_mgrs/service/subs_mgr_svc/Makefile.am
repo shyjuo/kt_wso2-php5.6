@@ -6,7 +6,7 @@ SUBDIRS =
 libsubscription_la_SOURCES = subs_mgr.c subs_mgr_skel.c
 libsubscription_la_LIBADD  = ../../../client/libsavan_client.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/savan \
 			-I. \
 			@AXIOMINC@ \

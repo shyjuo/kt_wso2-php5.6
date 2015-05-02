@@ -8,6 +8,6 @@ test_om_SOURCES = test_om.c
 test_om_LDADD   =	../../../util/src/libaxutil.la \
                     $(top_builddir)/src/om/libaxis2_axiom.la 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
 			-I ../../../util/include 

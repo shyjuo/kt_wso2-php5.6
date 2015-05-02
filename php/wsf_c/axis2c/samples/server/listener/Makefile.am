@@ -6,4 +6,4 @@ noinst_HEADERS = listener.h
 SUBDIRS =
 liblistener_la_SOURCES = listener.c listener_skeleton.c
 liblistener_la_LIBADD  =
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@

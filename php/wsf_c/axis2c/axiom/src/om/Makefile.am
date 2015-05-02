@@ -25,7 +25,7 @@ libaxis2_axiom_la_LIBADD =	$(top_builddir)/src/soap/libaxis2_soap.la \
 
 libaxis2_axiom_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES =	-I$(top_builddir)/include \
+AM_CPPFLAGS =	-I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
             -I$(top_builddir)/src/om \
             -I$(top_builddir)/src/attachments \

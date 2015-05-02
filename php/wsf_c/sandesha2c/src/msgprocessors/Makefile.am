@@ -13,7 +13,7 @@ libsandesha2_msgprocessors_la_SOURCES = app_msg_processor.c\
 										msg_processor_creator.c \
 										make_connection_msg_processor.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   	@AXIS2INC@ \
 		   	@AXIOMINC@ \
 		   	@NEETHIINC@ \

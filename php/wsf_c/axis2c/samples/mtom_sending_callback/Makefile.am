@@ -5,7 +5,7 @@ libmtom_sending_callback_la_LIBADD  = $(LDFLAGS) \
 						   		-L$(WSFC_HOME)/lib \
 								-laxutil 
 
-INCLUDES = -I ../../util/include \
+AM_CPPFLAGS = -I ../../util/include \
 			-I ../../axiom/include \
 			-I /usr/include/mysql \
 		@AXIS2INC@

@@ -17,7 +17,7 @@ libomxmlsec_la_LIBADD  = @OPENSSLLIB@ \
 			openssl/libomopenssl.la \
 			c14n/liboxsc14n.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../include \
 			@OPENSSLINC@ \
 			@UTILINC@ \

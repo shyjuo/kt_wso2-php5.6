@@ -25,7 +25,7 @@ wsclient_LDADD   = $(LDFLAGS) \
 		   $(SECCONV_LIBS) \
                    $(LIBXML2_LIBS)
 
-INCLUDES =  -I ../../axis2c/util/include \
+AM_CPPFLAGS =  -I ../../axis2c/util/include \
             -I ../../axis2c/include \
             -I ../../axis2c/axiom/include \
             -I ../../axis2c/neethi/include \

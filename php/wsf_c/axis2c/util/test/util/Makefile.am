@@ -13,4 +13,4 @@ test_util_LDADD   =  $(top_builddir)/src/libaxutil.la
 
 test_thread_LDADD   =  $(top_builddir)/src/libaxutil.la 
 
-INCLUDES = -I$(top_builddir)/include
+AM_CPPFLAGS = -I$(top_builddir)/include

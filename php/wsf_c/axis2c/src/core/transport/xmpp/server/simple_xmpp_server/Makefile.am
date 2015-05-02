@@ -21,7 +21,7 @@ axis2_xmpp_server_LDADD   =  $(LDFLAGS) \
 			    -L$(top_builddir)$(GUTHTHILA_LIBS) \
                             $(LIBXML2_LIBS)
 
-INCLUDES =  -I$(top_builddir)/include \
+AM_CPPFLAGS =  -I$(top_builddir)/include \
             -I$(top_builddir)/src/wsdl\
             -I$(top_builddir)/src/core/description\
             -I$(top_builddir)/src/core/context \

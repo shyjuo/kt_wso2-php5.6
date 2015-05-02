@@ -7,7 +7,7 @@ AM_CFLAGS = -g -O2 -pthread
 #test_SOURCES = des_test.c
 test_SOURCES = test_rsa.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			@UTILINC@ \
             @AXIOMINC@\
 	    @OPENSSLINC@

@@ -9,6 +9,6 @@ libCalculator_la_SOURCES =  \
 	axis2_Calculator_svc_skeleton.c
 
 libCalculator_la_LIBADD  =
-INCLUDES = -I$(WSFC_HOME)/include \
+AM_CPPFLAGS = -I$(WSFC_HOME)/include \
 			@UTILINC@ \
 			@AXIOMINC@

@@ -7,7 +7,7 @@ libsavan_msgreceivers_la_LIBADD = ../publishers/@SAVAN_PUBLISHER_LIB@ \
 									../util/libsavan_util.la
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		@AXIS2INC@ \
 		@AXIOMINC@ \
 		@UTILINC@ 

@@ -18,6 +18,6 @@ axis2_echoFloatArrayResponse.c  axis2_echoString.c \
 axis2_echoFloat.c               axis2_echoStringResponse.c
 
 libInteropTestPortTypeDocService_la_LIBADD  =
-INCLUDES = -I$(WSFC_HOME)/include \
+AM_CPPFLAGS = -I$(WSFC_HOME)/include \
 			@UTILINC@ \
 			@AXIOMINC@

@@ -15,6 +15,6 @@ flickr_LDADD   =    $(LDFLAGS) \
                     $(GUTHTHILA_LIBS) \
                     $(LIBXML2_LIBS)
 
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@
 
 EXTRA_DIST=README.txt flickr.mk

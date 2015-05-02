@@ -7,7 +7,7 @@ libaxis2_udp_receiver_la_SOURCES = udp_receiver.c
 
 libaxis2_udp_receiver_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 	       -I$(top_builddir)/src/core/transport\
 	       -I$(top_builddir)/src/core/transport/udp \
            -I$(top_builddir)/src/core/description \

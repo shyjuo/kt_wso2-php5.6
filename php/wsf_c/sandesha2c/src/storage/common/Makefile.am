@@ -8,7 +8,7 @@ libsandesha2_storage_la_SOURCES = \
 								next_msg_mgr.c \
 								seq_property_mgr.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   	@AXIS2INC@ \
 		   	@AXIOMINC@ \
 		   	@NEETHIINC@ \

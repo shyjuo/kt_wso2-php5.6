@@ -6,4 +6,4 @@ noinst_HEADERS = session.h
 SUBDIRS =
 libsession_la_SOURCES = session.c session_skeleton.c
 libsession_la_LIBADD  =
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@

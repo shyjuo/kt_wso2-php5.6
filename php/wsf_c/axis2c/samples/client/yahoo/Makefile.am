@@ -12,6 +12,6 @@ yahoosearch_LDADD   =    $(LDFLAGS) \
                     -laxis2_http_receiver \
                     $(GUTHTHILA_LIBS)
 
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@
 
 EXTRA_DIST=yahoo.mk

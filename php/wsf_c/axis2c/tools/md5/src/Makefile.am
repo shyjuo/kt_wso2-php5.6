@@ -7,7 +7,7 @@ md5_SOURCES =  md5.c
 md5_LDADD =  \
 			 ../../../util/src/libaxutil.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   -I ../../../util/include \
 		   -I ../../../include \
 		   -I ../include

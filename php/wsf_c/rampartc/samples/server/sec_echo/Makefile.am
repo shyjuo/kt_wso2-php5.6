@@ -13,7 +13,7 @@ libsec_echo_la_LIBADD   = $(LDFLAGS) \
 					-lrampart
 
 
-INCLUDES = @AXIS2INC@ \
+AM_CPPFLAGS = @AXIS2INC@ \
 	-I$(WSFC_HOME)/include \
 	            -I ../../../include
 

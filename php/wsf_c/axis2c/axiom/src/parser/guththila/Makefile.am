@@ -8,6 +8,6 @@ libaxis2_parser_la_SOURCES = ../xml_reader.c ../xml_writer.c guththila_xml_write
 
 libaxis2_parser_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../../../util/include \
 			-I ../../../../guththila/include

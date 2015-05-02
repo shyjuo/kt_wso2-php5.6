@@ -33,7 +33,7 @@ libaxis2_engine_la_LIBADD+=$(top_builddir)/src/core/transport/http/common/libaxi
 endif
 
 
-INCLUDES =  -I$(top_builddir)/include \
+AM_CPPFLAGS =  -I$(top_builddir)/include \
             -I$(top_builddir)/src/wsdl \
             -I$(top_builddir)/src/core/description \
             -I$(top_builddir)/src/core/engine \

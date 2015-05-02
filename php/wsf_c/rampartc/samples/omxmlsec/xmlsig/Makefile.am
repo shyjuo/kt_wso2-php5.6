@@ -3,7 +3,7 @@ prgbin_PROGRAMS = sign
 
 sign_SOURCES =  sign.c
 
-INCLUDES = @AXIS2INC@ \
+AM_CPPFLAGS = @AXIS2INC@ \
             -I ../../../include 
 
 sign_LDADD = -laxutil \

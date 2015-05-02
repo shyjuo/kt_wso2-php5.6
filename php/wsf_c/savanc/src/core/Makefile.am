@@ -4,7 +4,7 @@ prglib_DATA= ../data/module.xml
 
 libmod_savan_la_SOURCES = mod_savan.c savan_sub_processor.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		@AXIOMINC@ \
 		@UTILINC@ \
 		@AXIS2INC@ \

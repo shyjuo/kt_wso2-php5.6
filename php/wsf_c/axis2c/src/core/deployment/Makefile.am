@@ -27,7 +27,7 @@ libaxis2_deployment_la_SOURCES =phases_info.c \
                                 repos_listener.c \
                                 conf_init.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/core/description \
             -I$(top_builddir)/src/core/engine \
             -I$(top_builddir)/src/core/phaseresolver \

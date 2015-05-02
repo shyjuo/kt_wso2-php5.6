@@ -14,6 +14,6 @@ trader_LDADD   =    $(LDFLAGS) \
                     $(GUTHTHILA_LIBS) \
                     $(LIBXML2_LIBS)
 
-INCLUDES = -I ../include \
+AM_CPPFLAGS = -I ../include \
 		   @AXIS2INC@
 

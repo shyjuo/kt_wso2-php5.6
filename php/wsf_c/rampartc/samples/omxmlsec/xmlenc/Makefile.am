@@ -3,7 +3,7 @@ prgbin_PROGRAMS = enc
 
 enc_SOURCES =  enc.c
 
-INCLUDES = @AXIS2INC@ \
+AM_CPPFLAGS = @AXIS2INC@ \
             -I ../../../include 
 
 enc_LDADD   = -laxutil \

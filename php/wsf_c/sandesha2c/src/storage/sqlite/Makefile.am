@@ -11,7 +11,7 @@ libsandesha2_permanent_la_SOURCES = \
 								msg_store_bean.c \
 								sqlite3.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/sandesha2 \
 			-I. \
 			@AXIS2INC@ \

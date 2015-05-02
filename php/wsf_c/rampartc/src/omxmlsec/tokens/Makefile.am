@@ -13,7 +13,7 @@ liboxstokens_la_SOURCES =  token_encrypted_data.c token_encryption_method.c toke
 						token_encrypted_header.c token_saml.c
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I ../../../../util/include \
             -I ../../../../include \
             -I ../../../../axiom/include \

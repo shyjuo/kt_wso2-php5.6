@@ -17,7 +17,7 @@ libaxis2_soap_la_SOURCES = soap_fault.c \
                            soap12_builder_helper.c
 
 libaxis2_soap_la_LIBADD = 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
             -I$(top_builddir)/src/om \
 			-I ../../../util/include

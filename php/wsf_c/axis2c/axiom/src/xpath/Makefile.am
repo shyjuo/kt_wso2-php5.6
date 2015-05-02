@@ -10,7 +10,7 @@ libaxis2_xpath_la_SOURCES = xpath.c \
 libaxis2_xpath_la_LDFLAGS = -version-info $(VERSION_NO)
 
 libaxis2_xpath_la_LIBADD = 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
             -I$(top_builddir)/src/om \
 			-I ../../../util/include \

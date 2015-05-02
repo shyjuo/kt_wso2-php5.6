@@ -12,7 +12,7 @@ libaxis2_mod_log_la_LIBADD =  \
 
 libaxis2_mod_log_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/core/description \
             -I$(top_builddir)/src/core/context \
             -I$(top_builddir)/src/core/phaseresolver \

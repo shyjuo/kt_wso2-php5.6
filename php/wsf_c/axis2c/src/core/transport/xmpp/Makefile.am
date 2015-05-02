@@ -5,7 +5,7 @@ libaxis2_xmpp_la_SOURCES = xmpp_worker.c \
                            xmpp_session.c \
                            xmpp_transport_utils.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/wsdl \
             -I$(top_builddir)/src/core/engine \
             -I$(top_builddir)/xml_schema/include \

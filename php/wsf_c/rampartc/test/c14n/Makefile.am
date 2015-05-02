@@ -5,7 +5,7 @@ noinst_PROGRAMS = test_c14n
 
 test_c14n_SOURCES =  test.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   @OPENSSLINC@ \
 		    @AXIS2INC@ \
 		    @UTILINC@ \

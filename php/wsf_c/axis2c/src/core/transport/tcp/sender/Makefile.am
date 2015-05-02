@@ -12,7 +12,7 @@ libaxis2_tcp_sender_la_LIBADD = $(top_builddir)/src/core/transport/http/common/l
 
 libaxis2_tcp_sender_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 	   -I$(top_builddir)/src/core/transport\
            -I$(top_builddir)/src/core/transport/tcp \
            -I$(top_builddir)/src/core/transport/tcp/sender/libcurl \

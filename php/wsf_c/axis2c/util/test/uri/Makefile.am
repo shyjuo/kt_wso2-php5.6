@@ -6,7 +6,7 @@ uri_test_SOURCES = uri_test.c ../util/create_env.c
 uri_test_LDADD   =   \
                     $(top_builddir)/src/libaxutil.la 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../../axiom/include \
 			-I ../../../include
 

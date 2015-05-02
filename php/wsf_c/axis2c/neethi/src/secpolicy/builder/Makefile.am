@@ -18,7 +18,7 @@ librp_builder_la_SOURCES = algorithmsuite_builder.c \
 librp_builder_la_LIBADD  = ../../../../axiom/src/om/libaxis2_axiom.la \
 				../../../../util/src/libaxutil.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../../include \
 			-I ../../../../util/include \
             -I ../../../../axiom/include \

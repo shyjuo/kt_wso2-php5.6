@@ -6,7 +6,7 @@ liboxsc14n_la_SOURCES = c14n.c \
 					  sorted_list.c
 
 
-INCLUDES = 	-I ../../../include \
+AM_CPPFLAGS = 	-I ../../../include \
 	    @OPENSSLINC@ \
 		@UTILINC@ \
 		@AXIOMINC@ \

@@ -14,7 +14,7 @@ libmod_rahas_la_LIBADD  = ../util/librampart.la \
 				-lcrypto 
 				
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../include \
 			@OPENSSLINC@ \
 			@AXIS2INC@ \

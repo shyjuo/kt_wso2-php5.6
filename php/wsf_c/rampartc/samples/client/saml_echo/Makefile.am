@@ -17,7 +17,7 @@ saml_echo_LDADD   = $(LDFLAGS) \
                     $(GUTHTHILA_LIBS) \
                     $(LIBXML2_LIBS)
 
-INCLUDES = @AXIS2INC@ \
+AM_CPPFLAGS = @AXIS2INC@ \
 		   -I$(WSFC_HOME)/include \
             -I ../../../include 
 

@@ -20,7 +20,7 @@ librampart_la_LIBADD  = ../omxmlsec/libomxmlsec.la \
                      @OPENSSLLIB@ \
                      -lcrypto 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../include \
 			@OPENSSLINC@ \
 			@AXIOMINC@ \

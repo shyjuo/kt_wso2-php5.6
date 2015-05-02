@@ -8,7 +8,7 @@ libaxis2_xmpp_sender_la_LIBADD = ../../../engine/libaxis2_engine.la \
                 @IKSEMELLIB@ \
 				../libaxis2_xmpp.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 	       -I$(top_builddir)/src/wsdl\
 	       -I$(top_builddir)/src/core/transport\
 	       -I$(top_builddir)/src/core/transport/xmpp \

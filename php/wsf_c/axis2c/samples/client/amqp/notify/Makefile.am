@@ -11,4 +11,4 @@ notify_LDADD =  -L$(WSFC_HOME)/lib \
                 -laxis2_parser \
                 $(GUTHTHILA_LIBS)
 
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@

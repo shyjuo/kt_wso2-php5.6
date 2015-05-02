@@ -37,6 +37,6 @@ test_echo_string_array_LDADD = \
             -laxis2_http_receiver \
            $(GUTHTHILA_LIBS)
 
-INCLUDES = -I$(WSFC_HOME)/include \
+AM_CPPFLAGS = -I$(WSFC_HOME)/include \
                @UTILINC@ \
                @AXIOMINC@

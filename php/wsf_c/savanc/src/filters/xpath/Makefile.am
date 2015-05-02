@@ -6,7 +6,7 @@ libsavan_filter_mod_la_LIBADD = ../common/libsavan_common_filter_mod.la -lxml2
 
 data_DATA=template.xsl
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/savan \
 			-I. \
 			@AXIS2INC@ \

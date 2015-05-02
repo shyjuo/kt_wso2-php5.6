@@ -5,7 +5,7 @@ libaxis2_xmpp_receiver_la_LIBADD=	../../../../../util/src/libaxutil.la
 libaxis2_xmpp_receiver_la_SOURCES = xmpp_svr_thread.c\
                                     xmpp_server.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 	       -I$(top_builddir)/src/wsdl\
 	       -I$(top_builddir)/src/core/transport\
 	       -I$(top_builddir)/src/core/transport/xmpp \

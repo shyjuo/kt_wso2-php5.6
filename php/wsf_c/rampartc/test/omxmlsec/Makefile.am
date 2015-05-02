@@ -5,7 +5,7 @@ noinst_PROGRAMS = test_oxs
 
 test_oxs_SOURCES =  test.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		    -I ../../include \
 		    @OPENSSLINC@ \
 		    @AXIS2INC@ \

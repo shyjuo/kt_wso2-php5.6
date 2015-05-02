@@ -6,5 +6,5 @@ librdflatfile_la_LIBADD  = $(LDFLAGS) \
 								-laxutil \
 								../../src/util/librampart.la
 
-INCLUDES = -I ../../include\
+AM_CPPFLAGS = -I ../../include\
 			@AXIS2INC@

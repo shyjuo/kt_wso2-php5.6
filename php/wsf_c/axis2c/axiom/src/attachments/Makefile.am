@@ -7,7 +7,7 @@ libaxis2_attachments_la_SOURCES = mime_part.c \
 
 libaxis2_attachments_la_LIBADD = ../../../util/src/libaxutil.la 
 
-INCLUDES =	-I$(top_builddir)/include \
+AM_CPPFLAGS =	-I$(top_builddir)/include \
             -I$(top_builddir)/parser \
 			-I ../../../util/include
 

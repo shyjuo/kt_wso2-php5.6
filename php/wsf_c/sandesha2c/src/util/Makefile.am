@@ -15,7 +15,7 @@ libsandesha_util_la_SOURCES = \
                             property_bean.c\
                             property_mgr.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   	@AXIOMINC@ \
 		   	@UTILINC@ \
 		   	@NEETHIINC@ \

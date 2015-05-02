@@ -19,5 +19,5 @@ libtraderexchange_la_LIBADD  = $(LDFLAGS) \
                     $(LIBXML2_LIBS)
  
 
-INCLUDES = 	-I ../../include \
+AM_CPPFLAGS = 	-I ../../include \
 			@AXIS2INC@

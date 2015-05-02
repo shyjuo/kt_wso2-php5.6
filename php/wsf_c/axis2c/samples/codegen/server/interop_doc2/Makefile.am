@@ -11,6 +11,6 @@ axis2_echoStringArrayResponse.c  axis2_echoStructResponse.c  axis2_WSDLInteropTe
 axis2_echoString.c               axis2_echoVoid.c            axis2_WSDLInteropTestDocLitService_svc_skeleton.c
 
 libWSDLInteropTestDocLitService_la_LIBADD  =
-INCLUDES = -I$(WSFC_HOME)/include \
+AM_CPPFLAGS = -I$(WSFC_HOME)/include \
 			@UTILINC@ \
 			@AXIOMINC@

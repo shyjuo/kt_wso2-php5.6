@@ -16,7 +16,7 @@ libaxis2_description_la_SOURCES =desc.c \
 
 libaxis2_description_la_LDFLAGS = -version-info $(VERSION_NO)
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/core/engine \
             -I$(top_builddir)/util/include \
             -I$(top_builddir)/axiom/include \

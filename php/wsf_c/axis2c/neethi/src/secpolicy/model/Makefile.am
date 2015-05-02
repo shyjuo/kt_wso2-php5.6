@@ -14,7 +14,7 @@ librp_model_la_SOURCES = algorithmsuite.c asymmetric_binding.c \
 librp_model_la_LIBADD  = ../../../../util/src/libaxutil.la
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../../include \
 			-I ../../../../util/include \
 	        -I ../../../../axiom/include \

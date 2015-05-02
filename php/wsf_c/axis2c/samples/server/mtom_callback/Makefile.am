@@ -6,4 +6,4 @@ noinst_HEADERS = mtom_callback.h
 SUBDIRS =
 libmtom_callback_la_SOURCES = mtom_callback.c mtom_skeleton.c
 libmtom_callback_la_LIBADD  =
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@

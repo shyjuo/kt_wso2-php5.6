@@ -10,7 +10,7 @@ libaxis2_parser_la_LIBADD = @LIBXML2_LIBS@ \
 libaxis2_parser_la_LDFLAGS = -version-info $(VERSION_NO)
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
             -I ../../../../util/include \
 			@LIBXML2_CFLAGS@

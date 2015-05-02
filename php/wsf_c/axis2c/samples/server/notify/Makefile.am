@@ -6,4 +6,4 @@ noinst_HEADERS = notify.h
 SUBDIRS =
 libnotify_la_SOURCES = notify.c notify_skeleton.c
 libnotify_la_LIBADD  =
-INCLUDES = @AXIS2INC@
+AM_CPPFLAGS = @AXIS2INC@

@@ -7,7 +7,7 @@ libsavan_publisher_la_LIBADD = $(top_builddir)/src/util/libsavan_util.la \
 
 data_DATA=
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/savan \
 			-I. \
 			@AXIS2INC@ \

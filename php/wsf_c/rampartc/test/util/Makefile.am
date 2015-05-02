@@ -13,6 +13,6 @@ test_util_LDADD   = $(top_builddir)/src/util/librampart_util.la\
 		   -laxis2_util
 		   
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			@UTILINC@ 
 

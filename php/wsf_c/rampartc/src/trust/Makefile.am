@@ -11,7 +11,7 @@ libtrust_la_SOURCES = context.c \
 			policy_util.c \
 			token.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I ../../../../util/include \
             -I ../../../../include \
             -I ../../../../axiom/include \

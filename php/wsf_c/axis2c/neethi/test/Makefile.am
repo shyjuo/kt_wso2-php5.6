@@ -3,7 +3,7 @@ noinst_PROGRAMS = test
 
 test_SOURCES = test.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I ../../util/include \
 			-I ../../axiom/include \
 		    -I ../../include

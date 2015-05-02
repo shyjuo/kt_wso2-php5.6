@@ -16,7 +16,7 @@ test_registry_LDADD   =	../libsavan_storage.la \
                 $(GUTHTHILA_LIBS)
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 			-I$(top_builddir)/include/savan \
 			-I. \
 			@AXIS2INC@ \

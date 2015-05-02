@@ -14,7 +14,7 @@ test_xpath_streaming_LDADD   =	../../../util/src/libaxutil.la \
                     $(top_builddir)/src/om/libaxis2_axiom.la \
                     $(top_builddir)/src/xpath/libaxis2_xpath.la 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/parser \
 			-I ../../../include \
 			-I ../../../util/include 

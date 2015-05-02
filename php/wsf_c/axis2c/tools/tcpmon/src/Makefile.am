@@ -12,7 +12,7 @@ tcpmon_LDADD =  \
 			 ../../../axiom/src/om/libaxis2_axiom.la \
 			 ../../../axiom/src/parser/$(WRAPPER_DIR)/libaxis2_parser.la
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   -I ../../../util/include \
 		   -I ../../../axiom/include \
 		   -I ../../../include \

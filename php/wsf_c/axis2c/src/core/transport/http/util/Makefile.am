@@ -8,7 +8,7 @@ libaxis2_http_util_la_LIBADD=$(top_builddir)/util/src/libaxutil.la \
 			$(top_builddir)/axiom/src/om/libaxis2_axiom.la 
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I$(top_builddir)/src/core/engine \
             -I$(top_builddir)/util/include \
             -I$(top_builddir)/axiom/include

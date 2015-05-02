@@ -31,7 +31,7 @@ libsandesha2_wsrm_la_SOURCES = ack_final.c\
 							   msg_pending.c \
 							   make_connection.c
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
 		   	@AXIOMINC@ \
 		   	@UTILINC@ \
 		   	@NEETHIINC@ \

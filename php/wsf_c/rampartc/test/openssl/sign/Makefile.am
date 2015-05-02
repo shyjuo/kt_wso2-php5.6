@@ -8,7 +8,7 @@ AM_CFLAGS = -g  -pthread
 test_SOURCES = test.c
 
 
-INCLUDES = -I$(top_builddir)/include \
+AM_CPPFLAGS = -I$(top_builddir)/include \
             -I ../../../include \
 	    @OPENSSLINC@ \
 	    @UTILINC@ \
