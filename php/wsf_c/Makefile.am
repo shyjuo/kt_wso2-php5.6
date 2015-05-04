@@ -13,7 +13,6 @@ samples:
 	sh build_samples.sh $(prefix)
 
 install-data-hook:
-	cp -rf docs/* $(docsdir)
 	cp -rf examples/* $(samplesdir)
 	rm -rf `find $(samplesdir)/ -type d -name *.svn`
 	rm -rf `find $(samplesdir)/ -type d -name *.libs`
