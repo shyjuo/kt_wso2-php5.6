@@ -1,8 +1,6 @@
 
-#WS02 for PHP 
+#WS02 for PHP ( Still in progress ) 
 #### Installation process for PHP 5.6.7-1 / Ubuntu 14.04-LTS
-
----
 
 #1.0 Compilation from source. 
 
