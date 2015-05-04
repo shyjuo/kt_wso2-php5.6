@@ -10,9 +10,6 @@ Grab a fresh Ubuntu Distro and install OpenSSH and the VM tools
 Log into Ubuntu and install the following packages : 
 
 ### PHP 5.6
-PHP 5.6 is the latest release of PHP and embed nice features like traits etc. 
-At the time i wrote these lines, i don't get any idea if we will found issues to run the existing kroknet's PHP 5.3 code. Also the goal would be refactor some parts of the code to take advantage of the new PHP Core and to maintain the code living. 
-
 Natively Ubuntu 14.04-LTS Does not provide the last version of PHP 5.6. In order to install it we need to relay on a different repo.
 
 The command below will configure  Ubuntu 14.04-LTS to get PHP 5.6. 
