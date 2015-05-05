@@ -1,5 +1,5 @@
 
-#WS02 for PHP ( Still in progress ) 
+#wso2 for PHP ( Still in progress ) 
 #### Installation process for PHP 5.6.7-1 / Ubuntu 14.04-LTS
 
 #1.0 Compilation from source. 
@@ -41,7 +41,7 @@ Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies
 
 ### Build, Libs and git. 
 
-In order to compile WS02 for PHP you need to install several tools / libs. This can be done with the following statement : 
+In order to compile wso2 for PHP you need to install several tools / libs. This can be done with the following statement : 
 
 ```bash
 sudo apt-get install git build-essentials automake libtool g++ gcc-4.4 pkg-config pkg-config-aarch64-linux-gnu libxml2 php5-dev php5-xsl 
